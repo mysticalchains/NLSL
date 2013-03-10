@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>NodeJS Login System</title>
+	</head>
+	<body>
+		<div>
+			<form>
+				<span>Login</span><br>
+				<input style="color: #ccc; font-style: italic;" type="text" name="user" value="Digite Seu Nome" onfocus="loginTextFocus('Digite Seu Nome', this);" onblur="loginTextBlur('Digite Seu Nome', this);"><br>
+				<span>Password</span><br>
+				<input style="color: #ccc; font-style: italic;" type="text" name="pwd" value="Digite sua senha" onfocus="loginPwdFocus('Digite sua senha', this);" onblur="loginPwdBlur('Digite sua senha', this);"><br>
+				<input type="submit" name="login" value="entrar" onclick="loginValidation(user.value, pwd.value, 'Digite Seu Nome', 'Digite sua senha'); return false;">
+			</form>
+		</div>
+		<script src="js/login.js"></script>
+	</body>
+</html>
